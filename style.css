@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body {
+background: #4E3447;
+}
+
+#flashContent {
+min-width: 1000px;
+min-height: 810px;
+width: 100%;
+height: 100%;
+}
