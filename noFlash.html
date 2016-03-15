@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -31,13 +31,13 @@ function toggle(elementId) {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
-$(document).ready(function() {  
-$(window).load(function(){
+$(document).ready(function() { 
+$(".load_first" ).load(function(){
 	$('#preloader').fadeOut('fast').remove(); 
 	});
-	
 	$('#intro').delay(4000).fadeOut('slow');
-});
+	});
+	
 </script>
 	
 </head>
@@ -46,25 +46,26 @@ $(window).load(function(){
 
 <div id="preloader"></div>
 
-<img id="intro" src="images/showingMobileIntro.gif" alt="intro" width="960" height="720" />
+<img class="load_first" id="intro" src="images/showingMobileIntro.gif" alt="intro" width="960" height="720" />
 
 <div style="height:0px;"><p style="font-size:0px; color:#4E3447;">Hanna Habela - freelance graphic design</p></div>
 <div id="container">
+ 
  <div id="header">
   <div id="logo">
-  <img class="responsive" src="images/HannaHabela.png" alt="Hanna Habela" width="770" height="220" />
+  <img class="load_first" class="responsive" src="images/HannaHabela.png" alt="Hanna Habela" width="770" height="220" />
   </div>
  </div>
  
  <div id="graphicDesign">
   <div id="graphicDesignTag">
-   <img class="responsive" src="images/graphicDesign.png" alt="graphic design" width="670" height="110" />
+   <img class="load_first" class="responsive" src="images/graphicDesign.png" alt="graphic design" width="670" height="110" />
   </div>
  </div> 
  
  <div id="bannerContainer">
   <div id="banner">
-   <img class="responsive" src="images/banner.gif" alt="logo, web design, game artm illustration, animation, flyer, brochure, banner, photo manipulation, infographic and more" width="1154" height="417" />
+   <img class="load_first" class="responsive" src="images/banner.gif" alt="logo, web design, game artm illustration, animation, flyer, brochure, banner, photo manipulation, infographic and more" width="1154" height="417" />
    </div>
   </div>
   
@@ -73,13 +74,15 @@ $(window).load(function(){
    <div id="toggleEmail" style="display: none"><a class="email" href="mailto:haniahabela@gmail.com">haniahabela@gmail.com</a></div>
   </div>
   
+
+  
   <div id="content">
    <div id="portfolio">
-   <img class="responsive" src="images/Tropical_Breeze.jpg" alt="Tropical Breeze, vintage retro add 50s, beverage, cocktail" width="518" height="700"/>
+   <img class="load_first" class="responsive" src="images/Tropical_Breeze.jpg" alt="Tropical Breeze, vintage retro add 50s, beverage, cocktail" width="518" height="700"/>
    <img class="responsive" src="images/layout_FOR_MEN_only.jpg" alt="responsive website, mens cosmetics" width="920" height="700" />
    <img class="responsive" src="images/disco_kids.jpg" alt="disco kids, 70s" width="1000" height="600" />
    <img class="responsive" src="images/Logo_Set.jpg" alt="logo design" width="700" height="700" />
-   <img class="responsive" src="images/RestaurantFlyerOldHouse.jpg" alt="restaurant flyer" width="425" height="700" />
+   <img class="responsive" src="images/RestaurantFlyerOldHouse.jpg" alt="restaurant flyer" width="424" height="700" />
    <img class="responsive" src="images/JOLAcafeCoupons.jpg" alt="retro coupons graphic design" width="700" height="444" />
    <img class="responsive" src="images/kabaretowki.jpg" alt="vector illustration, jazz, cabaret" width="803" height="700" />
    <img class="responsive" src="images/foto_stylizacje.jpg" alt="photo manipulation" width="690" height="700" />
