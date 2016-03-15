@@ -7,8 +7,35 @@ padding: 0;
 outline: none;
 }
 
+#preloader { 
+position: fixed; 
+top: 0; 
+left: 0; 
+z-index: 999; 
+width: 100%; 
+height: 100%; 
+overflow: visible; 
+background: #29172A url(images/preloader.gif) no-repeat center center; 
+}
+
+#intro {
+object-fit: cover;
+position: fixed;
+top: 0;
+left: 0;
+margin: auto;
+z-index: 998;
+height: 100%;
+width: 100%;
+overflow: hidden;
+background: #29172A; 
+}
+
+
 body {
 background: #4E3447;
+margin: 0;
+padding: 0;
 }
 
 #flashContent {
@@ -17,3 +44,102 @@ min-height: 810px;
 width: 100%;
 height: 100%;
 }
+
+#container {
+width: 100%;
+}
+
+.responsive {
+max-width: 100%;
+height: auto;
+}
+
+#header {
+background-color: #D35400;
+padding: 1%;
+}
+
+#logo {
+max-width: 770px;
+height: auto;
+margin: 0 auto;
+}
+
+#graphicDesign {
+background-color: #842E11;
+padding: 2%;
+}
+
+#graphicDesignTag {
+max-width: 670px;
+height: auto;
+margin: 0 auto;
+}
+
+#bannerContainer {
+background-color: #923250;
+}
+
+#banner {
+max-width: 1154px;
+height: auto;
+margin: 0 auto;
+}
+
+#emailContainer {
+background-color: #9B547D;
+}
+
+.email {
+display: block;
+max-width: 140px;
+height: auto;
+margin: 0 auto;
+padding: 1%;
+}
+
+#toggleEmail {
+background-color: #4D3443;
+padding: 1%;
+}
+
+#toggleEmail a {
+display: block;
+max-width: 234px;
+margin: 0 auto;
+font-family: "Trebuchet MS", Helvetica, sans-serif ;
+text-decoration: underline;
+font-size: 22px;
+color: #9AFFCB;
+}
+
+#content {
+background-color: #725365;
+padding-bottom: 30px;
+}
+
+#portfolio img {
+display: block;
+width: auto;
+margin: 0 auto;
+padding-top: 30px;
+}
+
+#footer {
+background-color: #9B547D;
+padding: 1%;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif ;
+text-decoration: none;
+font-size: 22px;
+color: #E6DB63;
+}
+
+#footer a {
+text-decoration: underline;
+font-size: 20px;
+color: #9AFFCB;
+}
+
+
+
