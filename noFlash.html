@@ -28,9 +28,9 @@ function toggle(elementId) {
 	}
 } 
 </script>
-
+<!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
+-->
 <!--
 <script src="jquery-1.12.1.js"></script>
 -->
@@ -44,6 +44,7 @@ $(".load_first" ).load(function(){
 });
 </script>
 -->	
+<!--
 <script>
 var timer = 0; //setting this up as global
 
@@ -60,15 +61,40 @@ function showSite() {
       $("#site").fadeIn();
 }
 </script>
+-->
+
+<script>
+var preloader = new Image(),
+    img       = new Image(),
+    div       = document.getElementById('preloader');
+
+img.onload = function () {
+    preloader = null; 
+    div.innerHTML = '';
+    div.appendChild(this);
+};
+
+img.src = 'images/showingMobileIntro.gif';
+
+// if it's not in cache or not loaded (has no size), show the preloader
+if (! (img.complete) ) {
+    preloader.src = 'images/preloader.gif';
+    div.innerHTML = '';
+    div.appendChild(preloader);
+}
+</script>
+
 </head>
 
 <body>
-<!--
-<div id="preloader"></div>
--->
+
+<div id="preloader">
+
 <img class="load_first" id="intro" src="images/showingMobileIntro.gif" alt="intro" width="960" height="720" />
 
-<div id="site">
+</div>
+
+<div id="container">
  
  <div id="header">
   <div id="logo">
