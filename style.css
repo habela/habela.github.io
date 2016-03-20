@@ -7,14 +7,13 @@ padding: 0;
 outline: none;
 }
 
-#preloader { 
+#prel { 
 position: fixed; 
 top: 0; 
 left: 0; 
 z-index: 999; 
 width: 100%; 
 height: 100%; 
-overflow: visible; 
 background: #29172A url(images/preloader.gif) no-repeat center center; 
 }
 
@@ -24,13 +23,14 @@ position: fixed;
 top: 0;
 left: 0;
 margin: auto;
-z-index: 998;
+z-index: 999;
 height: 100%;
 width: 100%;
 overflow: hidden;
-background: #29172A; 
+background: #29172A url(images/preloader.gif) no-repeat center center ; 
 }
 
+.load_first {}
 
 body {
 background: #4E3447;
