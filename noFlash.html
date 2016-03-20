@@ -17,34 +17,20 @@
 
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-<script> 
-function toggle(elementId) {
-	var ele = document.getElementById(elementId);
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
-  	}
-	else {
-		ele.style.display = "block";
-	}
-} 
-</script>
-
-<script>
-loading_gif = new Image();
-loading_gif.src = 'images/showingMobileIntro.gif';
-
-loading_gif.onload = function () {loadPage()};
-function loadPage() {
-document.getElementById("container").innerHTML;
-}
-
-</script>
-
 </head>
 
 <body>
 
-<img id="intro" src="images/showingMobileIntro.gif" alt="intro" width="960" height="720" />
+<img id="intro" src="images/pixel.gif">
+
+<script>
+var image = document.getElementById('intro');
+var downloadingImage = new Image();
+downloadingImage.onload = function(){
+    image.src = this.src;   
+};
+downloadingImage.src = "images/showingMobileIntro.gif";
+</script>
 
 <div id="container">
  
@@ -70,6 +56,17 @@ document.getElementById("container").innerHTML;
    <a class="email" href="javascript:toggle('toggleEmail');"><img class="load_first responsive" src="images/email.png" alt="e-mail" width="200" height="70" /></a>
    <div id="toggleEmail" style="display: none"><a class="email" href="mailto:haniahabela@gmail.com">haniahabela@gmail.com</a></div>
   </div>
+  <script> 
+function toggle(elementId) {
+	var ele = document.getElementById(elementId);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+  	}
+	else {
+		ele.style.display = "block";
+	}
+} 
+</script>
   
 
   
