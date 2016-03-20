@@ -19,20 +19,18 @@
 
 </head>
 
-<body>
-
-<img id="intro" src="images/pixel.gif">
+<img id="intro">
 
 <script>
-var image = document.getElementById('intro');
-var downloadingImage = new Image();
-downloadingImage.onload = function(){
+var image = document.getElementById("intro");
+var loadingIntro = new Image();
+loadingIntro.onload = function(){
     image.src = this.src;   
 };
-downloadingImage.src = "images/showingMobileIntro.gif";
+loadingIntro.src = "images/showingMobileIntro.gif";
 </script>
 
-<div id="container">
+<div id="container" style="display:none">
  
  <div id="header">
   <div id="logo">
