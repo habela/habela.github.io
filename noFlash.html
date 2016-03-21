@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,34 +17,7 @@
 
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-</head>
-
-
-<div id="container" style="display:none">
- 
- <div id="header">
-  <div id="logo">
-  <img class="load_first responsive" src="images/HannaHabela.png" alt="Hanna Habela" width="770" height="220" />
-  </div>
- </div>
- 
- <div id="graphicDesign">
-  <div id="graphicDesignTag">
-   <img class="load_first responsive" src="images/graphicDesign.png" alt="graphic design" width="670" height="110" />
-  </div>
- </div> 
- 
- <div id="bannerContainer">
-  <div id="banner">
-   <img class="load_first responsive" src="images/banner.gif" alt="logo, web design, game artm illustration, animation, flyer, brochure, banner, photo manipulation, infographic and more" width="1154" height="417" />
-   </div>
-  </div>
-  
-  <div id="emailContainer">
-   <a class="email" href="javascript:toggle('toggleEmail');"><img class="load_first responsive" src="images/email.png" alt="e-mail" width="200" height="70" /></a>
-   <div id="toggleEmail" style="display: none"><a class="email" href="mailto:haniahabela@gmail.com">haniahabela@gmail.com</a></div>
-  </div>
-  <script> 
+<script> 
 function toggle(elementId) {
 	var ele = document.getElementById(elementId);
 	if(ele.style.display == "block") {
@@ -55,36 +28,28 @@ function toggle(elementId) {
 	}
 } 
 </script>
-  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-  
-  <div id="content">
-   <div id="portfolio">
-   <img class="load_first responsive" src="images/Tropical_Breeze.jpg" alt="Tropical Breeze, vintage retro add 50s, beverage, cocktail" width="518" height="700"/>
-   <img class="responsive" src="images/layout_FOR_MEN_only.jpg" alt="responsive website, mens cosmetics" width="920" height="700" />
-   <img class="responsive" src="images/disco_kids.jpg" alt="disco kids, 70s" width="1000" height="600" />
-   <img class="responsive" src="images/Logo_Set.jpg" alt="logo design" width="700" height="700" />
-   <img class="responsive" src="images/RestaurantFlyerOldHouse.jpg" alt="restaurant flyer" width="424" height="700" />
-   <img class="responsive" src="images/JOLAcafeCoupons.jpg" alt="retro coupons graphic design" width="700" height="444" />
-   <img class="responsive" src="images/kabaretowki.jpg" alt="vector illustration, jazz, cabaret" width="803" height="700" />
-   <img class="responsive" src="images/foto_stylizacje.jpg" alt="photo manipulation" width="690" height="700" />
-   <img class="responsive" src="images/pastelTown.jpg" alt="pastel town illustration" width="799" height="598" />
-   <img class="responsive" src="images/latawiec.jpg" alt="teddy bears illustration" width="731" height="700" />
-   <img class="responsive" src="images/layout_ksiegarnia.jpg" alt="online bookstore web design" width="564" height="800" />
-   <img class="responsive" src="images/layout_meble.jpg" alt="furniture online store web design" width="778" height="700" />
-   <img class="responsive" src="images/Jazz_Funk_ROCK.jpg" alt="typography jazz funk rock" width="352" height="758" />
-   <img class="responsive" src="images/html_css_radio.jpg" alt="radio web design" width="651" height="700" />
-   <img class="responsive" src="images/Kool_and_The_Gang.jpg" alt="cartoon illustration" width="817" height="691" />
-   <img class="responsive" src="images/SUPER_Freak.jpg" alt="super freak, funky typography" width="665" height="700"/>
-   </div>
-  </div>
-  
- <div id="footer">
- <p>Hanna Habela © 2016 All rights reserved</p> 
- <a href="mailto:haniahabela@gmail.com">e-mail</a>
- 
- </div>
-   
-</div>
+</head>
+
+<body>
+
+<img id="intro" alt="intro"/>
+
+<script>
+var image = document.getElementById('intro');
+var loadIntro = new Image();
+loadIntro.onload = function(){
+    image.src = this.src;
+				$('#intro').delay(3800).fadeOut('slow');
+				document.getElementById("container").innerHTML='<div id="header"><div id="logo"><img class="responsive" src="images/HannaHabela.png" alt="Hanna Habela" width="770" height="220" /></div></div><div id="graphicDesign"><div id="graphicDesignTag"><img class="responsive" src="images/graphicDesign.png" alt="graphic design" width="670" height="110" /></div></div><div id="bannerContainer"><div id="banner"><img class="responsive" src="images/banner.gif" alt="logo, web design, game artm illustration, animation, flyer, brochure, banner, photo manipulation, infographic and more" width="1154" height="417" /></div></div><div id="emailContainer"><a class="email" href="javascript:toggle(&quot;toggleEmail&quot;)"><img class="responsive" src="images/email.png" alt="e-mail" width="200" height="70" /></a><div id="toggleEmail" style="display: none"><a class="email" href="mailto:haniahabela@gmail.com">haniahabela@gmail.com</a></div></div><div id="content"><div id="portfolio"><img class="responsive" src="images/Tropical_Breeze.jpg" alt="Tropical Breeze, vintage retro add 50s, beverage, cocktail" width="518" height="700"/><img class="responsive" src="images/layout_FOR_MEN_only.jpg" alt="responsive website, mens cosmetics" width="920" height="700" /> <img class="responsive" src="images/disco_kids.jpg" alt="disco kids, 70s" width="1000" height="600" /><img class="responsive"src="images/Logo_Set.jpg" alt="logo design" width="700" height="700" /><img class="responsive" src="images/RestaurantFlyerOldHouse.jpg" alt="restaurant flyer" width="425" height="700" /><img class="responsive" src="images/JOLAcafeCoupons.jpg" alt="retro coupons graphic design" width="700" height="444" /><img class="responsive" src="images/kabaretowki.jpg" alt="vector illustration, jazz, cabaret" width="803" height="700" /><img class="responsive" src="images/foto_stylizacje.jpg" alt="photo manipulation" width="690" height="700" /><img class="responsive" src="images/pastelTown.jpg" alt="pastel town illustration" width="799" height="598" /><img class="responsive" src="images/latawiec.jpg" alt="teddy bears illustration" width="731" height="700" /><img class="responsive" src="images/layout_ksiegarnia.jpg" alt="online bookstore web design" width="564" height="800" /><img class="responsive" src="images/layout_meble.jpg" alt="furniture online store web design" width="778" height="700" /><img class="responsive" src="images/Jazz_Funk_ROCK.jpg" alt="typography jazz funk rock" width="352" height="758" /><img class="responsive" src="images/html_css_radio.jpg" alt="radio web design" width="651" height="700" /><img class="responsive" src="images/Kool_and_The_Gang.jpg" alt="cartoon illustration" width="817" height="691" /><img class="responsive" src="images/SUPER_Freak.jpg" alt="super freak, funky typography" width="665" height="700"/></div></div><div id="footer"><p>Hanna Habela © 2016 All rights reserved</p><a href="mailto:haniahabela@gmail.com">e-mail</a></div>';
+				}
+loadIntro.src = "images/showingMobileIntro.gif";
+</script>
+
+
+
+<div id="container"></div>
+
 </body>
 </html>
