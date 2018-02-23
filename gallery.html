@@ -28,6 +28,8 @@
     function pokazac() {
       var el = document.getElementById('preloader');
       el.style.display = 'none';
+      document.getElementById('sound').play();
+      document.getElementById('sound2').play();
     };
     </script>
 
@@ -39,9 +41,8 @@
                          var snd2 = document.getElementById("sound2") ; var snd_btn2 = document.getElementById("sound_button") ; snd2.muted = !snd2.muted; if(snd2.muted){ snd_btn2.innerHTML = "<img src='images/soundOff.png' />"; } else{ snd_btn2.innerHTML = "<img src='images/soundOn.png' />"; }
 }
   </script>
-  <audio autoplay="true" loop="true" width="0" height="0" id="sound" src="sounds/muzykaKlasyka.mp3" type="audio/mp3" ></audio>
-  <audio autoplay="true" loop="true" width="0" height="0" id="sound2" src="sounds/galeriaszumecho.mp3" type="audio/mp3" ></audio>
-  <noembed><bgsound src="music.mp3" loop="infinite"/></noembed>
+  <audio id="sound" loop="true" width="0" height="0" src="sounds/muzykaKlasyka.mp3" type="audio/mp3" ></audio>
+  <audio id="sound2" loop="true" width="0" height="0" src="sounds/galeriaszumecho.mp3" type="audio/mp3" ></audio>
 
 
 <div id='sound_button' onclick="playpause()" style="margin:5px; cursor:pointer" ><img title='Music Playing' alt='Play The Music' src='images/soundOn.png' /></div>
