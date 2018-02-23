@@ -1,0 +1,1124 @@
+@font-face {
+ font-family: 'HawaiianPunk';
+ src: url('../fonts/hawaiianPunk.eot') format('embedded-opentype'),
+      url('../fonts/hpunk.woff') format('woff'),
+			url('../fonts/HawaiianPunk.ttf') format('truetype'),
+      url('../fonts/hawaiianPunk.svg#HawaiianPunk') format('svg');
+}
+
+#preloader {
+position: fixed;
+left: 0;
+top: 0; z-index: 999;
+width: 100%;
+height: 100%;
+overflow: visible;
+background: #9E6C58 url('../images/preloader.gif') no-repeat center center;
+}
+
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+	font-family: 'HawaiianPunk', Impact, Gadget, sans-serif;
+	color: #93ffff;
+  text-shadow: 0px 3px rgba(64, 0, 32, 0.5);
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+
+.clear {
+    clear: both;
+}
+
+#sound_button {position: fixed; left:-4px; top: 100px; padding-top: 6px; padding-left: 4px; padding-right: 7px; padding-bottom: 0px; background-color: rgba(236, 140, 45, 0.2); z-index: 5}
+
+#container {
+  position: relative;
+  width: 1100px;
+  left: 50%;
+  margin-left: -550px;
+  top: 0;
+}
+
+.full-width {
+  margin: 0 -9999px;
+  padding: 0 9999px;
+}
+
+#topBar {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 1100px;
+  height: 70px;
+  background: #78558e;
+  border-bottom: 7px solid rgba(64, 0, 32, 0.25);
+  background-clip: padding-box;
+}
+
+#backBtn  {
+  float: left;
+  display: block;
+  margin-top: 16px;
+  margin-left: 80px;
+  width: 63px;
+  height: 40px;
+  background: url('../images/arrow-back.png') no-repeat;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 20px;
+}
+#backBtn:hover {background: url('../images/arrow-back-green.png') no-repeat center;}
+
+#topContact {
+  float: right;
+  display: block;
+  margin-top: 20px;
+  margin-right: 80px;
+  height: 40px;
+  font-size: 24px;
+  color: #CE94F7;
+  text-decoration: none;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 20px;
+}
+#topContact:hover { color: #aeff4a;}
+
+#logo {
+  margin: 1px auto;
+  width: 172px;
+  height: 60px;
+  background: url('../images/Hanna-Habela-logo.png') no-repeat center;
+}
+
+#logo p {
+  color: #CE94F7;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 49px;
+}
+
+#zen {
+  background: #593D6B;
+  height: 3000px;
+  position: static;
+}
+
+#zenBlock {
+  position: absolute;
+  right: 0px;
+  width: 320px;
+	pointer-events: none;
+}
+
+#zenBlockPart-top {
+  position: absolute;
+  top: 440px;
+  height: 59px;
+  width: 9999px;
+	border-top: 59px solid #986DB5;
+	border-left: 22px solid transparent;
+}
+
+#zenBlockPart-side {
+  position: absolute;
+	top: 440px;
+	right: 0px;
+	border-bottom: 4500px solid #4B3559;
+	border-left: 270px solid transparent;
+	height: 0;
+	width: 320px;
+}
+
+#zenBlockPart-front {
+  position: absolute;
+	top: 440px;
+	left: -245px;
+	border-bottom: 4500px solid #78568F;
+	border-left: 270px solid transparent;
+	height: 0;
+	width: 9999px;
+}
+
+#zenDescription {
+  position: absolute;
+  width: 240px;
+  top: 525px;
+  margin-left: 40px;
+  line-height: 29px;
+  pointer-events: all;
+}
+#zenDescription h1 {font-size: 30px;}
+#zenDescription h2 {font-size: 24px;}
+#zenDescription p {font-size: 24px;}
+
+#zenDoneList { margin-top: 70px; margin-left: -10px;}
+#zenDoneList2 { margin-top: 120px; margin-left: -40px}
+
+#zenPaintingsContainer {
+	padding-top: 80px;
+	padding-left: 60px;
+}
+
+.painting {
+	display: block;
+	float: left;
+	margin: 18px;
+	-webkit-box-shadow: 0px 15px 15px 0px rgba(64, 0, 32, 0.7);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 15px 15px 0px rgba(64, 0, 32, 0.7);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 15px 15px 0px rgba(64, 0, 32, 0.7);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  /* shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+}
+
+#painting-thickness {
+		display: block;
+	  height: 0px;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 8px solid;
+}
+
+#zen1, #zen2, #zen3, #zen5 { height: 405px; }
+#zen4 { height: 410px; margin-left: 60px;}
+
+#zen1 #painting-thickness { border-bottom-color: #328F99; }
+#zen2 #painting-thickness { border-bottom-color: #FF9373; }
+#zen3 #painting-thickness { border-bottom-color: #159948; }
+#zen4 #painting-thickness { border-bottom-color: #A64E88; }
+#zen5 #painting-thickness { border-bottom-color: #241963; }
+
+#snail1, #snail2, #snail3, #snail4 { height: 265px; }
+#snail5  { height: 265px; margin-top: 40px }
+#snail6  { height: 317px; margin-left: 30px }
+
+#snail1 #painting-thickness {border-bottom-color: #EBC2B9;}
+#snail2 #painting-thickness {border-bottom-color: #425959;}
+#snail3 #painting-thickness {border-bottom-color: #7C5091;}
+#snail4 #painting-thickness {border-bottom-color: #EB422F;}
+#snail5 #painting-thickness {border-bottom-color: #666666;}
+#snail6 #painting-thickness {border-bottom-color: #616161;}
+
+#snow1, #snow2, #snow3, #snow4, #snow5, #snow6 {height: 415px;}
+#snow7, #snow8 {float:right; height: 478px; margin-right: 30px; margin-top: 50px}
+#snow7 {margin-right: 70px;}
+#snow9 {float:right; height: 389px; margin-right: 130px; margin-top: 60px; }
+#snow11 {height: 170px; margin-left: 70px; margin-top: 50px;}
+#snow12 {height: 250px; margin-left: 50px; }
+#snow13 {height: 220px; margin-top: 40px;}
+#snow14 {height: 180px; margin-top: 10px;}
+#snow15 {height: 100px; margin-left: 130px; margin-top: 30px;}
+#snow10 {position: absolute; height: 150px; margin-left: -18px; top: 1200px}
+
+#snow1 #painting-thickness, #snow4 #painting-thickness, #snow7 #painting-thickness, #snow8 #painting-thickness,
+#snow9 #painting-thickness, #snow10 #painting-thickness, #snow13 #painting-thickness,
+#snow14 #painting-thickness, #snow15 #painting-thickness {border-bottom-color: #F2FFFF;}
+#snow2 #painting-thickness, #snow5 #painting-thickness {border-bottom-color: #ABBAFF;}
+#snow3 #painting-thickness, #snow6 #painting-thickness {border-bottom-color: #99FAFF;}
+#snow11 #painting-thickness {border-bottom-color: #A0ADE8;}
+#snow12 #painting-thickness {border-bottom-color: #A9D9B1;}
+
+#kidsApp1, #kidsApp2, #kidsApp3, #kidsApp4 {height: 254px;}
+
+#kidsApp1 #painting-thickness, #kidsApp2 #painting-thickness {border-bottom-color: #B3E0FF;}
+#kidsApp3 #painting-thickness {border-bottom-color: #66A9AD;}
+#kidsApp4 #painting-thickness {border-bottom-color: #94F211;}
+
+#personal1, #personal2 {height: 426px;}
+#personal3, #personal4 {height: 252px;}
+#personal5 {height: 313px; margin-top: -90px; margin-left: 100px;}
+#personal6 {height: 374px; margin-top: 90px; margin-left: 140px;}
+#personal7 {height: 313px; margin-top: -230px; margin-left: 40px;}
+#personal8 {height: 478px; margin-top: 20px; margin-left: 230px;}
+
+#personal1 #painting-thickness {border-bottom-color: #9E5C7D; }
+#personal2 #painting-thickness {border-bottom-color: #B4D9D3; }
+#personal3 #painting-thickness {border-bottom-color: #FFF8EB; }
+#personal4 #painting-thickness {border-bottom-color: #27007A; }
+#personal5 #painting-thickness {border-bottom-color: #545466; }
+#personal6 #painting-thickness {border-bottom-color: #00B0B3; }
+#personal7 #painting-thickness {border-bottom-color: #87516B; }
+#personal8 #painting-thickness {border-bottom-color: #F5F5F2; }
+
+
+#tv {
+	position: relative;
+	width: 654px;
+	height: 400px;
+	margin: 24px;
+	background-color: #473B43;
+	border-radius: 50px;
+	-webkit-box-shadow: 0px 15px 15px 0px rgba(64, 0, 32, 0.7);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 15px 15px 0px rgba(64, 0, 32, 0.7);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 15px 15px 0px rgba(64, 0, 32, 0.7);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  /* shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+}
+#tv::before {
+	content: "";
+  position: absolute;
+  margin-top: 10px;
+	width: 654px;
+	height: 400px;
+	background-color: #3B3138;
+	border-radius: 50px;
+}
+
+#on-tv {
+	position: absolute;
+	height: 315px;
+	width: 560px;
+	background-color: #2B2429;
+	padding: 0 6px;
+	margin: auto;
+	top: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#snail {
+  position: absolute;
+}
+
+#snailStair01 {
+	position: absolute;
+	background: #474747;
+	width: 162px;
+	height: 190px;
+	margin-left: -9999px;
+	padding-left: 9999px;
+}
+
+#snailStairs {
+	position: absolute;
+	top: 25px;
+	left: 158px;
+	background: #474747;
+	width:800px;
+	height: 166px;
+	-webkit-clip-path: polygon(0% 4%, 19% 0, 18% 23%, 37% 20%, 38% 43%, 61% 40%, 59% 66%, 80% 63%, 81% 80%, 100% 77%, 99% 100%, 0 100%);
+  clip-path: polygon(0% 4%, 19% 0, 18% 23%, 37% 20%, 38% 43%, 61% 40%, 59% 66%, 80% 63%, 81% 80%, 100% 77%, 99% 100%, 0 100%);
+}
+
+#snailStair-top01 {
+	position: absolute;
+	top: -17px;
+	width: 130px;
+  height: 0px;
+  border-right: 32px solid transparent;
+  border-bottom: 17px solid #9E9E9E;
+	margin-left: -9999px;
+	padding-left: 9999px;
+}
+#snailStair-top02 {
+	position: absolute;
+	top: 16px;
+	width: 275px;
+  height: 0px;
+  border-right: 35px solid transparent;
+  border-bottom: 15px solid #949494;
+	-webkit-transform: rotate(358deg);
+}
+#snailStair-top03 {
+	position: absolute;
+	top: 47px;
+	width: 419px;
+  height: 0px;
+  border-right: 35px solid transparent;
+  border-bottom: 19px solid #8C8C8C;
+	-webkit-transform: rotate(358deg);
+}
+#snailStair-top04 {
+	position: absolute;
+	top: 78px;
+	width: 597px;
+  height: 0px;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #808080;
+	-webkit-transform: rotate(358deg);
+}
+#snailStair-top05 {
+	position: absolute;
+	top: 116px;
+	width: 770px;
+  height: 0px;
+  border-right: 32px solid transparent;
+  border-bottom: 19px solid #787878;
+}
+#snailStair-top06 {
+	position: absolute;
+	top: 155px;
+	width: 923px;
+  height: 0px;
+  border-right: 32px solid transparent;
+  border-bottom: 15px solid #707070;
+	-webkit-transform: rotate(358deg);
+}
+#snailStair-top07 {
+	position: absolute;
+	top: 173px;
+	height: 16px;
+	background: #696969;
+	margin-right: -9999px;
+	padding-right: 9999px;
+}
+
+#snailWall {
+	margin-top: 188px;
+  background: #474747;
+  height: 4000px;
+}
+
+#snailPaintingsContainer {
+	padding-top: 10px;
+  margin-left: 47px;
+}
+
+#snailFrontStairs {
+	position: absolute;
+}
+.snailFrontStairs-shape {
+	width: 825px;
+	height: 395px;
+  -webkit-clip-path: polygon(100% 0%, 93% 0%, 93% 8%, 77% 8%, 78% 16%, 60% 16%, 60% 24%, 44% 24%, 45% 32%, 25% 32%, 26% 40%, 9% 40%, 9% 49%, 0 49%, 0% 100%, 18% 100%, 19% 94%, 37% 94%, 37% 87%, 55% 87%, 56% 78%, 73% 77%, 74% 70%, 87% 70%, 87% 60%, 100% 60%);
+  clip-path: polygon(100% 0%, 93% 0%, 93% 8%, 77% 8%, 78% 16%, 60% 16%, 60% 24%, 44% 24%, 45% 32%, 25% 32%, 26% 40%, 9% 40%, 9% 49%, 0 49%, 0% 100%, 18% 100%, 19% 94%, 37% 94%, 37% 87%, 55% 87%, 56% 78%, 73% 77%, 74% 70%, 87% 70%, 87% 60%, 100% 60%);
+}
+#snailFrontStairs-thickness {
+	position: absolute;
+	top: 0;
+	left: 166px;
+	background: #A1A1A1;
+}
+#snailFrontStairs-top {
+	position: absolute;
+	top: 17px;
+	left: 200px;
+	background: #5C5C5C;
+}
+#snailFrontStairs-left {
+	position: absolute;
+	top: 194px;
+	left: 0;
+	background: #5C5C5C;
+	width: 200px;
+	height: 201px;
+	margin-left: -9999px;
+	padding-left: 9999px;
+	border-top: 17px solid #A1A1A1;
+}
+#snailFrontStairs-right {
+	position: absolute;
+	top: 0px;
+	left: 980px;
+	background: #5C5C5C;
+	width: 200px;
+	height: 201px;
+	margin-right: -9999px;
+	padding-right: 9999px;
+	border-top: 17px solid #A1A1A1;
+}
+#snailStairSide-01 {
+	position: absolute;
+	top: 167px;
+	left: 239px;
+	height: 36px;
+  width: 36px;
+  background-color: #525252;
+  transform: rotate(90deg) skew(155deg);
+  -webkit-transform: rotate(90deg) skew(155deg);
+}
+#snailStairSide-02 {
+	position: absolute;
+	top: 128px;
+	left: 379px;
+  height: 36px;
+	border-bottom: 10px solid transparent;
+	border-left: 29px solid #525252;
+	transform: rotate(90deg) skew(155deg);
+  -webkit-transform: rotate(90deg) skew(155deg);
+}
+#snailStairSide-03 {
+	position: absolute;
+	top: 97px;
+	left: 536px;
+  height: 36px;
+	border-bottom: 10px solid transparent;
+	border-left: 29px solid #525252;
+	transform: rotate(90deg) skew(155deg);
+  -webkit-transform: rotate(90deg) skew(155deg);
+}
+#snailStairSide-04 {
+	position: absolute;
+	top: 70px;
+	left: 661px;
+	height: 36px;
+  width: 33px;
+  background-color: #525252;
+  transform: rotate(90deg) skew(155deg);
+  -webkit-transform: rotate(90deg) skew(155deg);
+}
+#snailStairSide-05 {
+	position: absolute;
+	top: 33px;
+	left: 808px;
+  height: 36px;
+	border-bottom: 10px solid transparent;
+	border-left: 29px solid #525252;
+	transform: rotate(90deg) skew(155deg);
+  -webkit-transform: rotate(90deg) skew(155deg);
+}
+#snailStairSide-06 {
+	position: absolute;
+	top: 7px;
+	left: 934px;
+	height: 36px;
+  width: 33px;
+  background-color: #525252;
+  transform: rotate(90deg) skew(155deg);
+  -webkit-transform: rotate(90deg) skew(155deg);
+}
+#snailFrontStairs-shadow {
+	position: absolute;
+	top: 42px;
+	left: 180px;
+	background: rgba(64, 0, 32, 0.25);
+}
+#snailFrontStairs-shadow-left {
+	position: absolute;
+	top: 236px;
+	left: 0;
+	width: 180px;
+	height: 201px;
+	background: rgba(64, 0, 32, 0.25);
+	margin-left: -9999px;
+	padding-left: 9999px;
+}
+#snailFrontStairs-shadow-right {
+	position: absolute;
+	top: 42px;
+	left: 980px;
+	width: 200px;
+	height: 201px;
+	background: rgba(64, 0, 32, 0.25);
+	margin-right: -9999px;
+	padding-right: 9999px;
+}
+#snailDescription {
+  position: absolute;
+  width: 1100px;
+  color: #F2FF3B;
+}
+#snailDescription h1 {font-size: 28px;}
+#snailDescription h2 {font-size: 20px;}
+#snailDescription p {font-size: 20px;}
+#snailDescription-part03 h2 {font-size: 26px;}
+.smallerFont {font-size: 60%}
+.diffFont {font-family: "Comic Sans MS", 'Arial Black', Gadget, sans-serif; font-weight: bold;}
+
+#snailDescription-part01 {
+  position: absolute;
+  top: 225px;
+  left: 100px;
+  line-height: 0.95;
+}
+#snailDescription-part02 {
+  position: absolute;
+  top: 130px;
+  left: 590px;
+  line-height: 0.80;
+}
+#snailDescription-part03 {
+  position: absolute;
+  top: 70px;
+  left: 870px;
+  line-height: 1.20;
+}
+
+#snow {
+	position: absolute;
+}
+
+#snowStairs {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	background: #994350;
+	width: 630px;
+	height: 120px;
+	-webkit-clip-path: polygon(0 0, 34% 0, 33% 23%, 58% 19%, 57% 54%, 78% 50%, 77% 73%, 100% 66%, 99% 100%, 0 100%);
+  clip-path: polygon(0 0, 34% 0, 33% 23%, 58% 19%, 57% 54%, 78% 50%, 77% 73%, 100% 66%, 99% 100%, 0 100%);
+}
+#snowStairLeft {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #994350;
+	width: 5px;
+	height: 120px;
+	border-top: 100px solid #FF7D93;
+  margin-left: -9999px;
+  padding-left: 9999px;
+}
+#snowStair01 {
+	position: absolute;
+	left: 4px;
+  border-right: 209px solid transparent;
+  border-bottom: 100px solid #FF7D93;
+}
+#snowStair02 {
+	position: absolute;
+	top: 34px;
+	left: 80px;
+  height: 96px;
+  width: 170px;
+  background-color: #E86D82;
+  transform: rotate(358deg) skew(67deg);
+  -webkit-transform: rotate(358deg) skew(67deg);
+}
+#snowStair03 {
+	position: absolute;
+	top: 71px;
+	left: 227px;
+  height: 96px;
+  width: 170px;
+  background-color: #D16275;
+  transform: rotate(358deg) skew(63deg);
+  -webkit-transform: rotate(358deg) skew(63deg);
+}
+#snowStair04 {
+	position: absolute;
+	top: 95px;
+	left: 362px;
+  height: 96px;
+  width: 170px;
+  background-color: #C45A6C;
+  transform: rotate(357deg) skew(64deg);
+  -webkit-transform: rotate(357deg) skew(64deg);
+}
+#snowStair05 {
+	position: absolute;
+	top: 124px;
+	left: 0;
+  height: 96px;
+  width: 1100px;
+  background-color: #AD5161;
+  margin-right: -9999px;
+	padding-right: 9999px;
+}
+
+#snowBlock {
+	position: absolute;
+}
+#snowBlockRectangle {
+	position: absolute;
+	left: -3150px;
+	background: #af4b5a;
+	width: 3000px;
+	height: 3000px;
+	transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#snowBlockRectangle-thickness {
+	position: absolute;
+	top: -30px;
+	left: -3150px;
+	background: #f07086;
+	width: 3000px;
+	height: 3000px;
+	transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#snowBlockRectangle-thickness-2 {
+	position: absolute;
+	top: 1470px;
+	left: 400px;
+	background: #f07086;
+	width: 70px;
+	height: 30px;
+}
+#snowBlockRectangle-shadow {
+	position: absolute;
+	left: -3170px;
+	top: 70px;
+	background: rgba(64, 0, 32, 0.25);
+	width: 3000px;
+	height: 3000px;
+	transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#snowDescription {
+  position: absolute;
+  top: 1270px;
+  left: 65px;
+  width: 270px;
+  color: #A6E3FF;
+}
+#snowDescription h1 {font-size: 28px;}
+#snowDescription h2 {font-size: 20px;}
+#snowDescription p {font-size: 20px;}
+#snowDescription-part03 h2 {font-size: 26px;}
+
+#snowWall {
+	margin-top: 220px;
+  background: #994350;
+  height: 6000px;
+}
+
+#snowPaintingsContainer {
+	padding-top: 20px;
+  margin-left: 144px;
+}
+
+#kidsApp {
+	position: absolute;
+}
+
+#kidsAppWall {
+	background: #8C7B5A;
+  height: 2000px;
+	border-top:  40px solid #A89167;
+}
+
+#kidsAppDescription {
+	width: 170px;
+	height: 800px;
+  padding: 50px 30px;
+  float: left;
+  color: #96DAFF;
+}
+#kidsAppDescription h1 {font-size: 22px;}
+#kidsAppDescription h2 {font-size: 19px;}
+#kidsAppDescription p {font-size: 16px;}
+
+#kidsAppDescription a {color: #B8E7FF; text-decoration: none; }
+#kidsAppDescription a:hover {color: #96DAFF;}
+
+#kidsAppPaintingsContainer {
+	margin-top: 20px;
+  float: right;
+  width: 800px;
+}
+
+#personal {
+	position: absolute;
+}
+
+#personalWall {
+	background: #401326;
+  height: 3500px;
+	border-top:  60px solid #7D2049;
+}
+
+#personalPaintingsContainer {
+  margin-top: 20px;
+}
+
+#personalBlock {
+  position: absolute;
+  right: 0px;
+  width: 210px;
+	pointer-events: none;
+}
+
+#personalBlockPart-top {
+  position: absolute;
+  height: 50px;
+  width: 9999px;
+	border-top: 50px solid #8e2c52;
+	border-left: 34px solid transparent;
+}
+
+#personalBlockPart-side {
+  position: absolute;
+	left: 0px;
+	width: 140px;
+	border-top: 2000px solid #270c17;
+	border-left: 100px solid transparent;
+	height: 0;
+}
+
+#personalBlockPart-front {
+  position: absolute;
+	left: 30px;
+	border-top: 2000px solid #581c34;
+	border-left: 100px solid transparent;
+	height: 0;
+	width: 9999px;
+}
+
+#personalDescription {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+	width: 120px;
+  color: #75F094;
+}
+#personalDescription h1 {font-size: 24px;}
+#personalDescription p {font-size: 18px;}
+
+#footer {
+	position: relative;
+  height: 200px;
+  background: url("../images/platform-elevator.png") repeat-x 0 0;
+}
+
+#footerText {
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 400px;
+  color: #ffb063;
+  text-align: center;
+}
+#footerText p {font-size: 16px;}
+#box-contact {
+  position: relative;
+  left: 750px;
+  top: -608px;
+  background: url("../images/box-contact.png") no-repeat;
+  width: 247px;
+  height: 228px;
+  padding-top: 118px;
+  padding-left: 15px;
+}
+#box-contact a {
+  color: #0092AA;
+  font-size: 28px;
+  text-decoration: none;
+}
+#box-contact a:hover {color: #00BFDE}
+
+#arrow {
+  background: url("../images/arrow.gif") no-repeat;
+  width: 112px;
+  height: 96px;
+  position: relative;
+  top: -855px;
+  left: 620px;
+}
+
+#zenBlock {top: 100px}
+#snail {top: 2000px}
+#snailFrontStairs {top: 4500px}
+#snow {top: 4550px}
+#snowBlock {top: 7400px}
+#kidsApp {top: 8900px}
+#personal {top: 11400px}
+#personalBlock {top: 16000px}
+#footer {margin-top: 4450px}
+
+#chuda {position: absolute; left:150px;}
+#lysy {position: absolute; top:130px;}
+#cekiny {position: absolute; top:-215px;left:25px;}
+#queenkatieruda {position: absolute; top:-280px;right:80px;pointer-events: none;}
+#LeszekWi {position: absolute; top:-388px;left:45px;}
+#rockman {position: absolute; top:-385px;right:25px;}
+#krawaciarz {position: absolute; top:-365px;right:20px;}
+#Wiesio {position: relative; top:-380px;left:60px;}
+
+@media screen and (max-width: 900px) {
+
+#container {
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+    top: 0;
+}
+#topBar {
+    width: 900px;
+  }
+#zenPaintingsContainer {
+  	width: 590px;
+    margin: 0 auto;
+}
+#zen4 { position: absolute; top: 1240px; margin-left: 20px;}
+.trailer {width: 320px; height: 180px;}
+#tv {
+	width: 374px;
+	height:  229px;
+	margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+#tv::before {
+  margin-top: 8px;
+  width: 374px;
+	height:  229px;
+	border-radius: 25px;
+}
+#on-tv {
+	width: 320px;
+  height: 180px;
+	padding: 0 3px;
+}
+#zenBlock {
+  top: 1440px;
+  left: 300px;
+}
+#chuda {left:250px;}
+#lysy {left:100px;}
+
+#zenDescription h2 {font-size: 22px; line-height: 22px;}
+#zenDescription p {font-size: 22px;}
+
+#zenDoneList { margin-top: 10px; margin-left: 0px;}
+#zenDoneList2 { margin-top: 40px; margin-left: 0px;}
+
+#snail {top: 2700px}
+#snailWall {
+width: 900px;
+}
+#snailPaintingsContainer {
+  margin: 0 auto;
+  width: 500px;
+}
+#snailFrontStairs {
+  top: 4000px;
+}
+#snailFront-just-Stairs {transform: scale(1.5);-ms-transform: scale(1.5);-webkit-transform:(1.5); left:-280px; position: relative;}
+#cekiny {position: absolute; top:-170px;left:120px;}
+
+#snailDescription-part01 {
+  width: 120px;
+  top: 270px;
+  left: 220px;
+  line-height: 0.95;
+}
+#snailDescription-part02 {
+  width: 100px;
+  top: 230px;
+  left: 400px;
+  line-height: 0.80;
+}
+#snailDescription-part03 {
+  width: 100px;
+  top: 180px;
+  left: 590px;
+  line-height: 1.20;
+}
+#snail5  { margin-top: 500px }
+
+#snow {top: 5650px}
+#snowStairs-wholeThing {position: relative;left: -230px}
+#queenkatieruda {top:-280px;right:20px;}
+#snowPaintingsContainer {
+	padding-top: 20px;
+  width: 590px;
+  margin-left: 180px;
+}
+#snow7, #snow8 {margin-right: 160px; margin-top: 20px;}
+#snow9 {margin-right: 130px; margin-top: 20px; }
+#snow11 {margin-left: 135px; margin-top: 210px;}
+#snow12 {margin-left: 115px; }
+#snow13 {margin-left: 80px; margin-top: 20px;}
+#snow14 {margin-left: 80px; margin-top: 20px;}
+#snow15 {height: 64px; margin-left: 50px; margin-top: 20px;}
+#snow10 {position: absolute; height: 150px; margin-left: 190px; top: 3050px}
+#cookies {width: 435px; height: 64px;}
+
+#snowBlock {
+  top: 8900px;
+  left: 200px;
+}
+#kidsApp {top: 10700px}
+#LeszekWi {left:420px;}
+
+#kidsAppPaintingsContainer {
+  width: 400px;
+  margin-left: 260px;
+  float: none;
+}
+#kidsAppDescription {
+	width: 400px;
+  padding: 20px 30px;
+  clear: both;
+  margin-left: 250px;
+}
+
+#personal {top: 12400px}
+#personalWall {height: 3362px;}
+#rockman {right:20px;}
+#personalPaintingsContainer {
+  width: 590px;
+  margin-left: 175px;
+}
+#personal3, #personal4 {margin-left: 50px;}
+#personal5 {margin-top: 20px; margin-left: 90px;}
+#personal7 {margin-top: 20px; margin-left: 30px;height: 288px;}
+#personal8 {margin-top: 20px; margin-left: 30px;height: 359px;}
+#discoKids {width: 480px; height: 288px;}
+#kamieniczki {width: 480px; height: 359px;}
+#personal6 {position: absolute; top: 2120px; margin-left: 35px;}
+
+#personalBlock {top: 15020px; right: 200px;}
+#personalBlockPart-side {
+	border-top: 800px solid #270c17;
+	border-left: 40px solid transparent;
+}
+
+#personalBlockPart-front {
+	border-top: 800px solid #581c34;
+	border-left: 40px solid transparent;
+}
+#krawaciarz {right: }
+
+#footer{margin-top:0;top:12300px; height: 140px; padding-top: 330px;overflow: hidden; background-position: 0 330px}
+#Wiesio {left:160px;}
+#box-contact {left: 450px;}
+#arrow {left: 320px;}
+}
+
+@media screen and (max-width: 520px) {
+  #container {
+      width: 520px;
+      left: 50%;
+      margin-left: -260px;
+      top: 0;
+  }
+#topBar {
+      width: 520px;
+      height: 140px;
+}
+#backBtn {margin-left: 20px;}
+#topContact {margin-right: 20px;}
+#logo {margin-top: 65px;}
+
+#zen {height: 3800px;}
+#zenPaintingsContainer {
+    	width: 330px;
+      padding-top: 150px;
+}
+#zen4 {height: 254px;position: absolute; top: 2190px; margin-left: 0px;}
+#zenCharacters {width: 198px;height: 254px;}
+#zenBlock {
+  top: 2140px;
+  left: 120px;
+}
+#chuda {height: 329px; width: 119px;left:210px;top: 140px;}
+#lysy {height: 252px;width: 126px;left:100px;top: 230px;}
+
+#snail {top: 3400px}
+#snailWall {
+width: 520px;
+}
+#snailPaintingsContainer {width: 340px; padding-top: 0px;}
+.snailImg {width: 300px;}
+#snail1, #snail2, #snail3, #snail4 { height: 169px; }
+#snail5  { height: 169px; margin-top: 600px }
+#snail6  { height: 212px; margin-left: 20px }
+#snailFrontStairs {
+  top: 4350px;
+}
+#snailFront-just-Stairs {transform: scale(1.5);-ms-transform: scale(1.5);-webkit-transform:(1.5); left:-380px; position: relative;}
+#cekiny {width: 154px;height:301px;top:-40px;left:70px;}
+
+#snailDescription h1 {font-size: 28px;}
+#snailDescription h2 {font-size: 17px;}
+#snailDescription p {font-size: 17px;}
+#snailDescription-part03 h2 {font-size: 22px;}
+#snailDescription-part01 {
+  width: 120px;
+  top: 285px;
+  left: 100px;
+  line-height: 0.95;
+}
+#snailDescription-part02 {
+  width: 120px;
+  top: 230px;
+  left: 300px;
+  line-height: 0.80;
+  text-align: right;
+}
+#snailDescription-part03 {
+  width: 120px;
+  top: 410px;
+  left: 300px;
+  line-height: 1;
+  text-align: right;
+}
+
+
+#snow {top: 5800px}
+#snowStairs-wholeThing {position: relative;left: -390px}
+#queenkatieruda {top:-150px;right:-20px; width: 301px; height:343px;}
+#snowPaintingsContainer {
+	padding-top: 20px;
+  width: 320px;
+  margin-left: 125px;
+}
+#snow7, #snow8 {margin-right: 68px; margin-top: 20px;height: 351px;}
+#tt-ui, #tt-ui-gif {width: 234px; height: 351px;}
+#snow9 {margin-right: 35px; margin-top: 20px; height: 300px; }
+#tt-characters {width: 300px; height: 300px;}
+#snow11 {margin-left: 10px; margin-top: 210px;}
+#snow12 {margin-left: -15px; }
+#snow13 {margin-left: -55px; margin-top: 20px;}
+#snow14 {margin-left: -55px; margin-top: 20px;}
+#snow15 {height: 64px; margin-left: -55px; margin-top: 20px;}
+#snow10 {position: absolute; height: 150px; margin-left: 50px; top: 4060px}
+#cookies {width: 380px; height: 59px;}
+
+#snowBlock {
+  top: 10050px;
+  left: 40px;
+}
+#kidsApp {top: 11900px}
+#LeszekWi {left:230px; top:-270px; width: 210px; height: 294px;}
+
+#kidsAppPaintingsContainer {
+  width: 400px;
+  margin-left: 70px;
+  float: none;
+}
+#kidsAppDescription {
+	width: 400px;
+  padding: 20px 30px;
+  clear: both;
+  margin-left: 70px;
+}
+
+#personal {top: 13670px}
+#personalWall {height: 3621px;}
+#rockman {width: 112px; height: 292px; right:110px; top: -250px;}
+#personalPaintingsContainer {
+  width: 500px;
+  margin-left: 0;
+}
+
+.personalImg {width: 300px;}
+#personal1, #personal2 {margin-left: 140px;}
+#personal3, #personal4 {margin-left: 110px; height: 170px;}
+#personal5 {margin-top: 20px; margin-left: 110px; height: 254px;}
+#personal7 {margin-top: 20px; margin-left: 110px;height: 180px;}
+#personal8 {margin-top: 20px; margin-left: 110px;height: 224px;}
+#discoKids {width: 300px; height: 180px;}
+#kamieniczki {width: 300px; height: 224px;}
+#personal6 {position: static; margin-top: 20px; margin-left: 110px;}
+
+#personalBlock {top: 16550px; right: 100px;}
+#personalBlockPart-side {
+	border-top: 800px solid #270c17;
+	border-left: 40px solid transparent;
+}
+
+#personalBlockPart-front {
+	border-top: 800px solid #581c34;
+	border-left: 40px solid transparent;
+}
+#krawaciarz {width: 92px; height: 292px; top: -260px; right:90px;}
+
+#footer{margin-top:0;top:13000px; height: 140px; padding-top: 330px;overflow: hidden; background-position: 0 330px}
+#Wiesio {width: 108px; height: 244px;left:325px; top: -270px; z-index: 4}
+#box-contact {left: 100px; margin-top: 106px}
+#arrow {left: 110px; margin-top: -140px; -webkit-transform: rotate(90deg); }
+}
