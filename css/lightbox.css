@@ -2,16 +2,22 @@ html.lb-disable-scrolling {
   overflow: hidden;
   /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
   position: fixed;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
 }
 
 .lightboxOverlay {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom:0;
+  right: 0;
   left: 0;
   z-index: 9999;
-  background-color: black;
+  background-color: #19000d;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
@@ -32,7 +38,7 @@ html.lb-disable-scrolling {
   height: auto;
   max-width: inherit;
   max-height: none;
-  border-radius: 3px;
+
 
 
 }
@@ -72,8 +78,8 @@ html.lb-disable-scrolling {
 
 .lb-cancel {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 43px;
+  height: 43px;
   margin: 0 auto;
   background: url(../images/loading.gif) no-repeat;
 }
