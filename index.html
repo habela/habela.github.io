@@ -19,6 +19,12 @@
     gtag('config', 'UA-66121404-1');
   </script>
 
+  <script type="text/javascript">
+    if (screen.width <= 699) {
+        document.location = "gallery.html";
+    }
+</script>
+
 
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
@@ -84,7 +90,7 @@ function handleComplete(evt) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib._4kamienicaHTML5();
+	exportRoot = new lib.STRONAGŁÓWNA2019();
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);
 	stage.enableMouseOver();
