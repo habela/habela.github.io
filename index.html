@@ -18,6 +18,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-66121404-1', 'auto');
 ga('send', 'pageview');
+[js title=”Google Universal”]setTimeout("ga(‘send’, ‘event’, { eventCategory: ’30 seconds on page’, eventAction: ‘Read’ })", 30000);[/js]
+
+[js title=”Google Classic”]setTimeout("_gaq.push([‘_trackEvent’, ’30 seconds on page’, ‘Read’]);", 30000);[/js]
 </script>
 <!-- End Google Analytics -->
 
