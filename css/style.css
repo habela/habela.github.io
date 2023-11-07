@@ -21,7 +21,6 @@ html, body {
 h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 h1 {font-size: 24px}
 h2 {font-size: 24px}
-P {font-size: 12px;}
 
 .clear {
     clear: both;
@@ -239,12 +238,20 @@ P {font-size: 12px;}
 @media screen and (max-width: 600px) {
 #container-whole {
   width: 170%;}
-	#queen {z-index: 100; position: absolute; width: 15.4%; top: 16.7%; left: 22%;}
+	#queen {z-index: 100; position: absolute; width: 15.4%; top: 16.7%; left: 22%;} /* width: 0.7 x original (22% w tym wypadku) */
 	#cekiny {z-index: 100; position: absolute; width: 8%; top: 17%; right:20%;}
-	#rockman {z-index: 100; position: absolute; width: 8.54%; top: 37.7%; left: 14% ;}
-	#lysy {z-index: 100; position: absolute; width: 9.37%; top: 39.5%; right: 19%;}
-	#chuda {z-index: 100; position: absolute; width: 8.85%; top: 36.5%; right: 11.5% ;}
-	#LeszekWi {z-index: 100; position: absolute; width: 15.625%; top: 62%; left: 11%;}
-	#krawaciarz {z-index: 100; position: absolute; width: 6.823%; top: 62.5%; right: 17%;}
-	#Wiesio {z-index: 100; position: absolute; width: 8.02%; top: 87.5%; left: 36.5%;}
+	#rockman {z-index: 100; position: absolute; width: 5.98%; top: 41%; left: 20% ;}
+	#lysy {z-index: 100; position: absolute; width: 6.59%; top: 42.5%; right: 24.7%;}
+	#chuda {z-index: 100; position: absolute; width: 6.19%; top: 40%; right: 19.5% ;}
+	#LeszekWi {z-index: 100; position: absolute; width: 10.94%; top: 65.5%; left: 20.5%;}
+	#krawaciarz {z-index: 100; position: absolute; width: 4.77%; top: 65.7%; right: 39%;}
+	#Wiesio {z-index: 100; position: absolute; width: 5.61%; top: 90.5%; left: 38%;}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+h1 {font-size: 18px}
+h2 {font-size: 18px}
+
+html, body { font-size: 12px; }
+
+
 }
