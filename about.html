@@ -1,0 +1,111 @@
+<html lang="en-US">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHY8503SS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XHY8503SS1');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <title>Hanna Habela - about</title>
+  <meta name="description" content="Hanna Habela info; clients reviews, Hanna Habela - Freelance 2D Game Artist Generalist; Designing game environments, characters, animations, User Interface, illustrations" />
+  <meta name="Keywords" content="Hanna Habela, 2d game artist, 2d game art, freelancer, freelance game artist, graphic designer, graphic design, game assets, backgrounds, character design, animations, UI, game trailer " />
+
+
+</head>
+
+<body>
+
+
+
+  <div id="content" class="aboutPage">
+
+    <div id="container-whole" class="aboutPageUnder900" >
+
+
+      <div id="top-bar" class="top-barAbout">
+
+        <a href="index.html"><img id="logo" src="images/Hanna-Habela-logo.png"/></a>
+        <h1>2D artist generalist</h1>
+        <a id="aboutLink" href="index.html">GALLERY</a>
+        <a id="contactLink" href="mailto:haniahabela@gmail.com">CONTACT</a>
+      </div>
+
+      <div id="container-WithFloor">
+
+        <img id="Hanna" src="images/Hanna.gif">
+
+       <div class="review">
+            <h2>Mark Radocy</h2><h3> - Rockstar, Seafloor Games owner</h3>
+            <p>Hanna brings her own ideas to the table, resulting in impressive, creative art that always exceeded my expectations.</p>
+       </div>
+       <div class="review">
+            <h2>Erin Hasslacher</h2><h3> - Black Seven Studios</h3>
+            <p>Very easy to work with, with great attention to detail and timely results!</p>
+       </div>
+       <div class="review">
+            <h2>Maureen Bunney</h2><h3> - Mighty Play</h3>
+            <p>I want to thank you for being an absolute gem during the entire project.</p>
+       </div>
+       <div id="about">
+            <p>Oh, Hi! I'm Hanna and I do art :> </br>
+              Environments, characters, animations, UI.. </br>
+              My skills in Unity often come in handy. </br>
+              I like trying new art styles.</br>
+              And I like making games.</br>
+              You like it too? </br>
+              Isn't this an extraordinary coincidence??
+            </p>
+       </div>
+
+      </div>
+
+<div id="view" class="viewAbout">
+ <div id="view-00" class="box" data-speed="-32"></div>
+ <div id="view-01" class="box" data-speed="-26"></div>
+ <div id="view-02" class="box" data-speed="-25"></div>
+ <div id="view-03" class="box" data-speed="-23"></div>
+ <div id="view-04" class="box" data-speed="-19"></div>
+ <div id="view-05" class="box" data-speed="-16"></div>
+ <div id="view-06" class="box" data-speed="-11"></div>
+ <div id="view-07" class="box" data-speed="-8"></div>
+ <div id="view-08" class="box" data-speed="-5"></div>
+ <div id="view-09" class="box" data-speed="2"></div>
+ <div id="view-10" class="box" data-speed="5"></div>
+ <div id="view-11" class="box" data-speed="8"></div>
+</div>
+
+</div>
+
+</div>
+
+ <script src="scripts/jquery.js"></script>
+ <script src="scripts/jquery-inertiaScroll.js"></script>
+ <script>
+      if ($(window).width() > 900) {
+        $(function()  {
+
+                 $(".box").inertiaScroll({
+                   parent: $("#content")
+                 });
+
+                 $(".box").each(function(){
+                   var speed = $(this).data("speed");
+                   var height = $(this).height() + "px";
+                 });
+               });
+      }
+
+ </script>
+
+
+
+</body>
+</html>

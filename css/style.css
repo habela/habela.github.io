@@ -1,3 +1,12 @@
+@font-face {
+ font-family: 'InkFree';
+ src: url('../fonts/Inkfree.ttf');
+}
+@font-face {
+ font-family: 'VeraMono';
+ src: url('../fonts/VeraMono.ttf');
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -12,7 +21,6 @@ html, body {
 	overflow-x:hidden;
   background-color: #767081;
 	font-family: 'Romanica', Arial, Helvetica, Sans-Serif;
-  text-shadow: 0 1px 1px rgba(64, 0, 32, 0.7), 0 3px 1px rgba(64, 0, 32, 0.7) ;
   font-weight: normal;
   font-size: 18px;
 }
@@ -28,6 +36,11 @@ h2 {font-size: 24px}
 #content {
 	width: 100%;
   aspect-ratio: 0.518;
+	overflow: hidden;
+}
+
+.aboutPage {
+	aspect-ratio: 16 / 8.5 !important;
 }
 #container-whole {
 	position: absolute;
@@ -43,9 +56,27 @@ h2 {font-size: 24px}
 	background: #8f8590;
 	height: 4%;
 	padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
 	margin: 0 20.83% 0 20.83%;
+	color: #58415a;
 }
+#top-bar h1 {
+	font-family: 'VeraMono';
+	text-decoration: underline;
+	font-size: 16px;
+	text-align: center;}
 
+#top-bar a {
+	color: #58415a;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: -52px 0;
+
+}
+#aboutLink { float: left;}
+#contactLink {float: right;}
 #logo {
   display: block;
   margin: 0 auto;
@@ -79,6 +110,33 @@ h2 {font-size: 24px}
 	width: 100%;
 }
 
+.review {
+	background-color: #767081;
+	color: #29192a;
+	font-family: 'InkFree';
+	width: 47%;
+	margin: 0 auto 0.5%;
+	padding: 0.7% 2%;
+}
+
+.review h1, h2, h3, h4, p { font-weight: bold;}
+.review h2 {font-size: 24px; display: inline;}
+.review h3 {font-size: 20px; display: inline;}
+.review p {font-size: 18px; margin-top: 2%;}
+
+#about {
+	width: 43%;
+  height: 20%;
+	margin: 1% 4% 0 32%;
+	font-family: 'VeraMono', 'Courier New';
+	color: #58415a;
+	font-size: 15px;
+	line-height: 18px;
+  background: url('../images/speachBubble.png') no-repeat;
+  padding-top: 1%;
+  padding-left: 6%;
+}
+
 #caption 	{
 	background-color: rgba(13, 5, 17, 0.5);
 	position: absolute;
@@ -87,6 +145,7 @@ h2 {font-size: 24px}
 	padding-top: 6%;
   text-align: center;
 	color: #d6fdff;
+	text-shadow: 0 1px 1px rgba(64, 0, 32, 0.7), 0 3px 1px rgba(64, 0, 32, 0.7) ;
 	visibility: hidden;
 }
 
@@ -223,7 +282,7 @@ h2 {font-size: 24px}
 	background-size: 100%;
 	z-index: -89;
 }
-#queen {z-index: 100; position: absolute; width: 22%; top: 13.7%; left: 8%;}
+#queen {z-index: 100; position: absolute; width: 22%; top: 13.7%; left: 8%;} /* width: width px/1920px (430px/1920px w tym wypadku) */
 #cekiny {z-index: 100; position: absolute; width: 11.46%; top: 14%; right:15%;}
 #rockman {z-index: 100; position: absolute; width: 8.54%; top: 37.7%; left: 14% ;}
 #lysy {z-index: 100; position: absolute; width: 9.37%; top: 39.5%; right: 19%;}
@@ -231,6 +290,7 @@ h2 {font-size: 24px}
 #LeszekWi {z-index: 100; position: absolute; width: 15.625%; top: 62%; left: 11%;}
 #krawaciarz {z-index: 100; position: absolute; width: 6.823%; top: 62.5%; right: 17%;}
 #Wiesio {z-index: 100; position: absolute; width: 8.02%; top: 87.5%; left: 36.5%;}
+#Hanna {z-index: 100; position: absolute; width: 16%; top: 14.7%; left: 15%;}
 
 @media screen and (max-width: 1100px) {
 	h1, h2, h3, h4, h5, h6 {font-weight: normal;}
@@ -240,9 +300,35 @@ h2 {font-size: 24px}
 	#caption 	{ height: 8.25%; padding-top: 1%; }
 }
 
-@media screen and (max-width: 600px) {
-#container-whole {
-  width: 170%;}
+@media screen and (max-width: 1200px) {
+	.review h1, h2, h3, h4, p { font-weight: bold;}
+	.review h2 {font-size: 24px; display: inline;}
+	.review h3 {font-size: 20px; display: inline;}
+	.review p {font-size: 18px; margin-top: 2%;}
+
+	.aboutPage { aspect-ratio: 16 / 16 !important; }
+
+	#about {
+		width: 50%;
+		margin: 18% auto 0;
+		font-size: 15px;
+		line-height: 18px;
+    background: url('../images/speachBubble-2.png') no-repeat;
+	}
+	#Hanna {top: 38.5%; left: 20%;}
+}
+
+@media screen and (max-width: 930px) {
+	.aboutPageUnder900 { aspect-ratio: 16 / 16 !important }
+	.top-barAbout { height: 7.8% !important; }
+	.viewAbout {top: 13% !important;}
+	#Hanna {top: 75%; left: 8%;}
+  #about {  background: url('../images/speachBubble.png') no-repeat;
+padding-left: 10%}
+}
+
+@media screen and (max-width: 800px) {
+  #container-whole {width: 170%;}
 	#queen {z-index: 100; position: absolute; width: 15.4%; top: 16.7%; left: 22%;} /* width: 0.7 x original (22% w tym wypadku) */
 	#cekiny {z-index: 100; position: absolute; width: 8%; top: 17%; right:20%;}
 	#rockman {z-index: 100; position: absolute; width: 5.98%; top: 41%; left: 20% ;}
@@ -252,9 +338,32 @@ h2 {font-size: 24px}
 	#krawaciarz {z-index: 100; position: absolute; width: 4.77%; top: 65.7%; right: 39%;}
 	#Wiesio {z-index: 100; position: absolute; width: 5.61%; top: 90.5%; left: 38%;}
 
+  #Hanna {top: 75%; left: 22%;}
+	#about { margin: 25% auto 0;
+    background: url('../images/speachBubble-2.png') no-repeat;
+  background-position: 37% 0;
+}
+
+#top-bar h1, h2, h3, h4, h5, h6 {font-weight: bold !important;}
+
 h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 h1 {font-size: 18px}
 h2 {font-size: 18px}
 html, body { font-size: 12px; }
 #caption 	{ height: 6.72%; padding-top: 4%; }
+}
+
+@media screen and (max-width: 620px) {
+	#about { margin: 16% auto 0;}
+}
+
+@media screen and (max-width: 550px) {
+	#about { margin: 10% auto 0;}
+}
+@media screen and (max-width: 515px) {
+	#about {width: 55%; margin: 0 auto; padding: 1% 10%; font-size: 14px !important; line-height: 16px; background: #8f8590; }
+	.review {width: 55%;}
+	.review h2 {font-size: 18px; }
+	.review h3 {font-size: 16px; }
+	.review p {font-size: 15px; margin-top: 2%;}
 }
