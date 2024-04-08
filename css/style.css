@@ -55,10 +55,10 @@ h2 {font-size: 24px}
 #top-bar {
 	background: #8f8590;
 	height: 4%;
-	padding-top: 1%;
+	padding-top: 0.5%;
   padding-left: 1%;
   padding-right: 1%;
-	margin: 0 20.83% 0 20.83%;
+	margin: 0 20.83% 0;
 	color: #58415a;
 }
 #top-bar h1 {
@@ -126,7 +126,7 @@ h2 {font-size: 24px}
 
 #about {
 	width: 43%;
-  height: 20%;
+  height: 300px;
 	margin: 1% 4% 0 32%;
 	font-family: 'VeraMono', 'Courier New';
 	color: #58415a;
@@ -341,7 +341,8 @@ padding-left: 10%}
   #Hanna {top: 75%; left: 22%;}
 	#about { margin: 25% auto 0;
     background: url('../images/speachBubble-2.png') no-repeat;
-  background-position: 37% 0;
+  background-position: 37% 0;}
+
 }
 
 #top-bar h1, h2, h3, h4, h5, h6 {font-weight: bold !important;}
@@ -361,9 +362,14 @@ html, body { font-size: 12px; }
 	#about { margin: 10% auto 0;}
 }
 @media screen and (max-width: 515px) {
-	#about {width: 55%; margin: 0 auto; padding: 1% 10%; font-size: 14px !important; line-height: 16px; background: #8f8590; }
+	#about {width: 55%; margin: 3% auto; padding: 3% 10%; font-size: 14px !important; line-height: 16px; background-color: #8f8590; background-image: url('../images/speachBubble-2.png') no-repeat;   background-position: 60% 10%; }
 	.review {width: 55%;}
 	.review h2 {font-size: 18px; }
 	.review h3 {font-size: 16px; }
 	.review p {font-size: 15px; margin-top: 2%;}
+
+  #top-bar {
+    padding-top: 16px;}
+  body { background-color: #8f8590;}
+
 }
