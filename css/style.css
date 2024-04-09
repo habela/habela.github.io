@@ -282,15 +282,15 @@ h2 {font-size: 24px}
 	background-size: 100%;
 	z-index: -89;
 }
-#queen {z-index: 100; position: absolute; width: 22%; top: 13.7%; left: 8%;} /* width: width px/1920px (430px/1920px w tym wypadku) */
-#cekiny {z-index: 100; position: absolute; width: 11.46%; top: 14%; right:15%;}
+#queen {z-index: 100; position: absolute; width: 22%; top: 13.4%; left: 8%;} /* width: width px/1920px (430px/1920px w tym wypadku) */
+#cekiny {z-index: 100; position: absolute; width: 11.46%; top: 13.7%; right:15%;}
 #rockman {z-index: 100; position: absolute; width: 8.54%; top: 37.7%; left: 14% ;}
 #lysy {z-index: 100; position: absolute; width: 9.37%; top: 39.5%; right: 19%;}
 #chuda {z-index: 100; position: absolute; width: 8.85%; top: 36.5%; right: 11.5% ;}
 #LeszekWi {z-index: 100; position: absolute; width: 15.625%; top: 62%; left: 11%;}
 #krawaciarz {z-index: 100; position: absolute; width: 6.823%; top: 62.5%; right: 17%;}
 #Wiesio {z-index: 100; position: absolute; width: 8.02%; top: 87.5%; left: 36.5%;}
-#Hanna {z-index: 100; position: absolute; width: 16%; top: 14.7%; left: 15%;}
+#Hanna {z-index: 100; position: absolute; width: 16%; top: 14.3%; left: 15%;}
 
 @media screen and (max-width: 1100px) {
 	h1, h2, h3, h4, h5, h6 {font-weight: normal;}
@@ -322,7 +322,7 @@ h2 {font-size: 24px}
 	.aboutPageUnder900 { aspect-ratio: 16 / 16 !important }
 	.top-barAbout { height: 7.8% !important; }
 	.viewAbout {top: 13% !important;}
-	#Hanna {top: 75%; left: 8%;}
+	#Hanna {top: 74.5%; left: 8%;}
   #about {  background: url('../images/speachBubble.png') no-repeat;
 padding-left: 10%}
 }
